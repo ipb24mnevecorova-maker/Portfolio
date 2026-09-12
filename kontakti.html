@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="lv">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/pages.css">
-    <title>Par mani</title>
+    <title>Kontakti</title>
 </head>
 <body>
 
@@ -19,33 +19,38 @@
 
     <div class="name">
         <div class="box">
-            <h3 class="fcf-h3">Sazināties ar mani</h3>
+            <h3 class="fcf-h3">Sazinies ar mani</h3>
 
-    <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact.php">
-        
+    <form id="fcf-form-id" class="fcf-form-class" method="post" action="https://api.web3forms.com/submit">
+
+        <input type="hidden" name="access_key" value="4d69d129-8de2-4f9e-9555-2ea38172fb16">
+        <input type="hidden" name="subject" value="Jauna ziņa no vietnes">
+        <input type="hidden" name="redirect" value="https://YOUR-VERCEL-DOMAIN.vercel.app/paldies.html">
+        <input type="checkbox" name="botcheck" style="display: none;" tabindex="-1" autocomplete="off">
+
         <div class="fcf-form-group">
             <label for="Name" class="fcf-label">Jūsu vārds</label>
             <div class="fcf-input-group">
-                <input type="text" id="Name" name="Name" class="fcf-form-control" placeholder="Jānis Bērziņš" required>
+                <input type="text" id="Name" name="name" class="fcf-form-control" placeholder="Jānis Bērziņš" required>
             </div>
         </div>
 
         <div class="fcf-form-group">
             <label for="Email" class="fcf-label">Jūsu e-pasta adrese</label>
             <div class="fcf-input-group">
-                <input type="email" id="Email" name="Email" class="fcf-form-control" placeholder="jūs@domēns.com" required>
+                <input type="email" id="Email" name="email" class="fcf-form-control" placeholder="jusu@epasts.lv" required>
             </div>
         </div>
 
         <div class="fcf-form-group">
             <label for="Message" class="fcf-label">Jūsu ziņa</label>
             <div class="fcf-input-group">
-                <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" placeholder="Rakstiet savu ziņu šeit..." required></textarea>
+                <textarea id="Message" name="message" class="fcf-form-control" rows="6" maxlength="3000" placeholder="Raksti savu ziņu šeit..." required></textarea>
             </div>
         </div>
 
         <div class="fcf-form-group">
-            <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Sūtīt ziņojumu</button>
+            <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Nosūtīt ziņu</button>
         </div>
     </form>
         </div>
