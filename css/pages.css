@@ -76,6 +76,12 @@ html, body {
   margin-bottom: 10px;
 }
 
+.box p {
+  margin-bottom: 28px;
+  font-size: 22px;
+  line-height: 1.4;
+}
+
 /* Animation/Transition */
 
 @keyframes slideInRight {
@@ -107,4 +113,119 @@ html, body {
 
 .name {
   animation: slideInRight 0.6s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+/* Contact form */
+
+.box:has(.fcf-form-class) {
+  width: 100%;
+  max-width: 440px;
+  max-height: 88vh;
+  overflow-y: auto;
+  padding-right: 6px;
+}
+
+.fcf-h3 {
+  font-size: 32px;
+  margin: 0 0 24px;
+}
+
+.fcf-form-class {
+  display: flex;
+  flex-direction: column;
+}
+
+.fcf-form-group {
+  margin-bottom: 18px;
+}
+
+.fcf-label {
+  display: block;
+  font-size: 15px;
+  font-weight: normal;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 6px;
+}
+
+.fcf-input-group {
+  position: relative;
+}
+
+.fcf-form-control {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 14px;
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.25s ease, background-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.fcf-form-control::placeholder {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.fcf-form-control:hover {
+  border-color: rgba(255, 255, 255, 0.55);
+}
+
+.fcf-form-control:focus {
+  background-color: rgba(255, 255, 255, 0.14);
+  border-color: #ffffff;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.15);
+}
+
+textarea.fcf-form-control {
+  resize: vertical;
+  min-height: 110px;
+  font-family: 'Arial', sans-serif;
+}
+
+.fcf-btn {
+  display: inline-block;
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.fcf-btn-primary {
+  color: #872e2e;
+  background-color: #ffffff;
+}
+
+.fcf-btn-primary:hover {
+  background-color: rgba(255, 255, 255, 0.85);
+  transform: translateY(-2px);
+}
+
+.fcf-btn-primary:active {
+  transform: translateY(0);
+}
+
+.fcf-btn-lg {
+  padding: 13px 20px;
+}
+
+.fcf-btn-block {
+  display: block;
+  width: 100%;
+}
+
+.fcf-form-control:-webkit-autofill,
+.fcf-form-control:-webkit-autofill:hover,
+.fcf-form-control:-webkit-autofill:focus {
+  -webkit-text-fill-color: #ffffff;
+  -webkit-box-shadow: 0 0 0 1000px rgba(135, 46, 46, 0.9) inset;
+  transition: background-color 9999s ease-in-out 0s;
 }
